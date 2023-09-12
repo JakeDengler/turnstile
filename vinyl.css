@@ -1,0 +1,143 @@
+
+:root {
+    --gray-black: #2c2c2c;
+}
+
+.vinly-box {
+    width: 400px;
+    height: 200px;
+    border: 4px solid black;
+    margin-top: 100px;
+    margin-left: 200px;
+    z-index: 0;
+    background-color: orange;
+}
+
+.vinyl-disk {
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: linear-gradient(
+        55deg,
+        silver 0%, 
+        black 40%,
+        var(--gray-black) 100%);
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0;
+    bottom: 225px;
+    z-index: 2;
+    left: 175px;
+
+}
+
+.center-circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: white;;
+    border-radius: 50%;
+    z-index: 10;
+    top: 120px;
+    left: 120px;
+}
+
+.smaller-circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 3;
+    top: 100px;
+    left: 100px;
+}
+
+span {
+    border: 1px solid var(--gray-black);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: transparent;
+    top: 85px;
+    left: 85px;
+    z-index: 3;
+}
+
+span:nth-of-type(2) {
+    width: 105px;
+    height: 105px;
+    top: 70px;
+    left: 70px;
+  }
+
+span:nth-of-type(3) {
+    width: 125px;
+    height: 125px;
+    top: 60px;
+    left: 60px;
+  }
+span:nth-of-type(4) {
+    width: 145px;
+    height: 145px;
+    top: 50px;
+    left: 50px;
+  }
+
+span:nth-of-type(5) {
+    width: 165px;
+    height: 165px;
+    top: 40px;
+    left: 40px;
+  }
+
+span:nth-of-type(6) {
+    width: 185px;
+    height: 185px;
+    top: 30px;
+    left: 30px;
+  }
+span:nth-of-type(7) {
+    width: 205px;
+    height: 205px;
+    top: 20px;
+    left: 20px;
+  }
+span:nth-of-type(8) {
+    width: 225px;
+    height: 225px;
+    top: 10px;
+    left: 10px;
+  }
+
+
+@keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+
+ @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: purple;
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+ 
